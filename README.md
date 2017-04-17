@@ -3,11 +3,15 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: In each unit that contains at least one pair of naked twins, we use constraint propagation 
+to eliminate the possible values of non-twins boxes, thus pruning the number of branches in DFS tree, 
+resulting in fewer possible paths for which search function has to go through.
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Two additional diagonal units serve as additional constraints for which 
+eliminate, only_choice (and naked_twins) strategies can be applied. These additional constraints
+help prune down the branches in DFS tree. 
 
 ### Install
 
